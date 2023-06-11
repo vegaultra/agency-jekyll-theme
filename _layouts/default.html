@@ -3,14 +3,19 @@
 
   {% include head.html %}
 
-  <body id="page-top">
+  <body>
+	{% include nav.bootstrap.html %}
+	<main>
+		{{ content }}
+	</main>      
 
-      {{ content }}
-
-	  {% include footer.html %}
+	  
 
 	  <!-- Bootstrap core JavaScript -->
 	  <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+	  <!-- js that getbootstrap.com uses -->
+	  <script src="assets/js/docs.min.js"></script>
 
   </body>
 </html>
